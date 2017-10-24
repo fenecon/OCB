@@ -340,11 +340,13 @@ var ImageDialog = Widget.extend({
             if (this.media.tagName !== "A") {
                 $('.note-control-selection').hide();
                 media = document.createElement('a');
+                media.textContent = img.name;
                 $(this.media).replaceWith(media);
                 this.media = media;
             }
             this.media.setAttribute('href', '/web/content/' + img.id + '?unique=' + img.checksum + '&download=true');
-            $(this.media).addClass('o_image').attr('title', img.name).attr('data-mimetype', img.mimetype);
+            //$(this.media).addClass('o_image').attr('title', img.name).attr('data-mimetype', img.mimetype);
+            $(this.media).attr('title', img.name).attr('data-mimetype', img.mimetype);
         }
 
         $(this.media).attr('alt', img.alt);
