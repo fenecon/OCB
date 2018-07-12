@@ -380,6 +380,8 @@ msgid ""
 "<span class=\"o_stat_text\">Add</span>\n"
 "                                    <span class=\"o_stat_text\">Context Action</span>"
 msgstr ""
+"<span class=\"o_stat_text\">Tilføj</span>\n"
+"                                    <span class=\"o_stat_text\">kontekst handling</span>"
 
 #. module: mail
 #: model:ir.ui.view,arch_db:mail.email_template_form
@@ -2471,7 +2473,7 @@ msgstr "Livechat Samtale"
 #: code:addons/mail/static/src/js/chatter.js:38
 #, python-format
 msgid "Log"
-msgstr ""
+msgstr "Log"
 
 #. module: mail
 #. openerp-web
